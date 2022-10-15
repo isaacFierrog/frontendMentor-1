@@ -5,34 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <main class="container">
-        <header class="header d-flex space-between center">
-            <article class="counter d-flex center">
-                <h2 class="counter__title">Notifications</h2>
-                <p class="counter__number">3</p>
-            </article>
-            <button class="button">Mark all as read</button>
-        </header>
-        <section class="notifications">
-            <article class="notification d-flex">
-                <img class="notification__img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Imagen perfil">
-                <section class="notice">
-                    <p class="notice__title"><span class="user">Mark Webber</span> reacted to your post <span class="activity">My first tournament today!</span></p>
-                    <p class="notice__time">1m ago</p>
+    <main class="d-flex flex-center">
+        <div class="container">
+            <p class="title">Password Generator</p>
+            <section class="password d-flex flex-beteewn">
+                <p class="password__text">PASSWORD</p>
+                <div class="password__copy">{}</div>
+            </section>
+            <form class="form">
+                <article class="control d-flex flex-beteewn">
+                    <p class="control__text">Character Length</p>
+                    <p class="control__number">10</p>
+                </article>
+                <input class="form__range" type="range" name="range" min="0" max="20">
+                <section>
+                    <label for="uppercase">
+                        <input type="checkbox" name="uppercase" id="uppercase">
+                        <span>Include Uppercase Letters</span>
+                    </label>
+                    <label for="lowercase">
+                        <input type="checkbox" name="lowercase" id="lowercase">
+                        <span>Include Lowercase Letters</span>
+                    </label>
+                    <label for="numbers">
+                        <input type="checkbox" name="numbers" id="numbers">
+                        <span>Include Numbers</span>
+                    </label>
+                    <label for="symbols">
+                        <input type="checkbox" name="symbols" id="symbols">
+                        <span>Include Symbols</span>
+                    </label>
                 </section>
-            </article>
-            <article class="notification d-flex">
-                <img class="notification__img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Imagen perfil">
-                <section class="notice">
-                    <p class="notice__title"><span class="user">Mark Webber</span> reacted to your post <span class="activity">My first tournament today!</span></p>
-                    <p class="notice__time">1m ago</p>
+                <section>
+                    <p>STRENGTH</p>
+                    <article>
+                        <p>MEDIUM</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </article>
                 </section>
-            </article>
-        </section>
+                <input type="submit" value="GENERATE ->">
+            </form>
+        </div>
     </main>
 </body>
 </html>

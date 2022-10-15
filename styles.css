@@ -10,84 +10,64 @@ html{
 }
 body{
     font-size: 1.6rem;
+    color: rgb(233, 233, 233);
+    background-color: rgb(25, 25, 31);
 }
 main{
     min-height: 100vh;
 }
-
 .container{
     width: 100%;
-    max-width: 80rem;
+    max-width: 50rem;
     margin: 0 auto;
 }
 .d-flex{
     display: flex;
 }
-.space-between{
-    justify-content: space-between;
-}
-.center{
+.flex-center{
+    justify-content: center;
     align-items: center;
 }
-.button{
-    color: rgb(168, 167, 167);
-    border: none;
+.flex-beteewn{
+    justify-content: space-between;
 }
-.button:hover{
-    cursor: pointer;
+.title{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(126, 126, 126);
 }
 
-/*Estilos header*/
-.header{
-    padding: 2rem .8rem;
+/*Estilos password*/
+.password{
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(50, 52, 68);
+}
+.password__text{
+    font-weight: bold;
+    color: rgb(233, 233, 233);
+}
+
+/*Estilos form*/
+.form{
+    padding: 2rem;
+    background-color: rgb(50, 52, 68);
+}
+.form__range{
+    appearance: none;
     width: 100%;
-    background-color: rgb(238, 236, 236);
+    height: .8rem;
+    color: aquamarine;
+    background-color: aquamarine;
 }
 
-/*Estilos contador*/
-.counter__number{
-    padding: .5rem 1.3rem;
-    margin-left: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: rgb(36, 36, 167);
-    border: none;
-    border-radius: .5rem;
-}
+/*Estilos control*/
+.control{
 
-/*Estilos notificacion*/
-.notification{
-    margin-bottom: 1rem;
-    padding: 0 .8rem;
-    padding-top: 3rem;
-    background-color: rgb(238, 236, 236);
-    border-bottom: .1rem solid black;
 }
-.notification:last-of-type{
-    margin-bottom: 0;
-}
-.notification__img{
-    margin-right: 2rem;
-    width: 5rem;
-    height: 5rem;
-    border: none;
-    border-radius: 50%;
-    object-fit: cover;
-    
-}
-
-/*Estilos notice*/
-.user{
+.control__number{
     font-weight: bold;
-    color: rgb(24, 24, 83);
-}
-.activity{
-    font-weight: bold;
-    color: rgb(109, 109, 109);
-}
-.notice__title{
-    color: rgb(150, 150, 150);
-}
-.notice__time{
-    color: rgb(184, 184, 184);
+    font-size: 2.4rem;
+    color: aquamarine;
 }
